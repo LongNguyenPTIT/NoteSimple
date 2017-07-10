@@ -26,7 +26,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/LongNguyenPTIT/NoteSimple/blob/master/demo.mov' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/LongNguyenPTIT/NoteSimple/blob/master/Demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
