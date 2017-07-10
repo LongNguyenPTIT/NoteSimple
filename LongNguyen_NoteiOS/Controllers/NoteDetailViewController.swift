@@ -49,15 +49,20 @@ class NoteDetailViewController: UIViewController {
                 })
                 
                 self.present(alert, animated: true, completion: nil)
-            } else { 
-                if note.isUpdate {
+            } else {
+                if note != nil {
                     note.title = titleTextField.text!
                     note.content = contentTextView.text!
                     self.delegate?.dataUpdate(didUpdate: note, indexPath: indexPath!)
-                } else {
+                }else {
                     note = noteManagement.createNote(title: titleTextField.text!, content: contentTextView.text!, isOffline: false)
                     self.delegate?.dataCreate(didUpdate: note)
                 }
+//                if note.isUpdate {
+//                    
+//                } else {
+//                    
+//                }
                 
                 
                 noteManagement.saveChanges()
