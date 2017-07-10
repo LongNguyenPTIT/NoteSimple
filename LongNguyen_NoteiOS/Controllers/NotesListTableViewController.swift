@@ -54,6 +54,7 @@ class NotesListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         noteManagement.delete(id: notes[indexPath.row].objectID)
         notes.remove(at: indexPath.row)
+        noteManagement.saveChanges()
         tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.bottom)
     }
     
